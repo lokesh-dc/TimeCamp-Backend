@@ -38,15 +38,6 @@ app.use(cors())
 app.get("/", (req, res)=>{
     res.send("working fine");
 })
-// if(process.env.NODE_ENV==="production"){
-//   app.use(express.static(path.join(__dirname, "../../timecamp/build")));
-//   app.get("*",(req,res)=>{
-//    res.sendFile(path.join(__dirname,"timecamp","build","index.html"));
-
-//   })
-  
-// }
-// else{
     app.get("/",(req,res)=>{
         res.send("API Running")
     })
